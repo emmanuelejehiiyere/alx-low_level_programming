@@ -14,7 +14,6 @@ int main(void)
 		{
 			putchar(emma);
 		}
-	
 	}
 	putchar('\n');
 	return (0);

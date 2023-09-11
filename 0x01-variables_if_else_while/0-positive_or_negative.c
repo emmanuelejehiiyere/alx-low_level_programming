@@ -2,9 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - this is the main method or the point of entry
- * Return - this will always retutn o if the program does not have any errors
+ * main - Entry point
  *
+ * Return: Always 0 (Success)
  */
 
 /* I added a new header here for standard input and output */
@@ -19,9 +19,9 @@ int main(void)
 	/* Let's start */
 	if (n > 0)
 		printf("%d is positive\n", n);
-	else if (n < 0)
-		printf("%d is negative\n", n);
-	else
+	else if (n == 0)
 		printf("%d is zero\n", n);
+	else
+		printf("%d is negative\n", n);
 	return (0);
 }

@@ -7,7 +7,7 @@
 void print_alphabet(void)
 {
 	char emma;
-	
+
 	emma = 'a';
 
 	while (emma <= 'z')

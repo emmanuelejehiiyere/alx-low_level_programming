@@ -1,1 +1,1 @@
-C programming language, nested loops and functions
+readme for c function and nested loops

@@ -1,16 +1,11 @@
 #include "main.h"
-
-
 #include <stdio.h>
-
-
 /**
- * print_to_98 - print a program to 98
+ * print_to_98 - Function for task
+ * NB: prints number to 98
  * @n: The number to start printing
- * Return: Always 0.
+ * Return: Always 0 (Success)
  */
-
-
 void print_to_98(int n)
 {
 	if (n <= 98)

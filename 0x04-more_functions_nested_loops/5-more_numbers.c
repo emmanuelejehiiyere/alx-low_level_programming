@@ -1,23 +1,23 @@
 #include "main.h"
 /**
- * print_line - Function for task
- * @n: number to print _
- * Return: Always 0 (Success)
+ * more_numbers - Function for task
+ * NB: Prints numbers from 0-14 in 10 line
+ * Return: void (nothing)
  */
-void print_line(int n)
+void more_numbers(void)
 {
-	int num;
-
-	if (n <= 0)
+	int line, num;
+	
+	for (line = 0; line < 10; line++)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (num = 0; num <= n; num++)
+		for (num = 0; num < 15; num++)
 		{
-			putchar('_');
+			if (num >= 10)
+			{
+				_putchar(num / 10 + '0');
+			}
+			_putchar(num % 10 + '0');
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }

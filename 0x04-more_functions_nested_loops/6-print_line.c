@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * print_line - Function for task
- * @n: number to print _
- * Return: Always 0 (Success)
+ * @n: number to print
+ * Return: void
  */
 void print_line(int n)
 {
@@ -14,7 +14,7 @@ void print_line(int n)
 	}
 	else
 	{
-		for (num = 0; num <= n; num++)
+		for (num = 0; num < n; num++)
 		{
 			_putchar('_');
 		}

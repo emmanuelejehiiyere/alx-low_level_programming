@@ -1,12 +1,16 @@
 #include "main.h"
 /**
- * swap_int - Function for tak
- * @a: Variable type int
- * @b: Variable type int
+ * swap_int - Function for task
+ * Description: It swaps two values of integers
+ * @a: value to swap
+ * @b: valur to swap
  * Return: void (nothing)
  */
 void swap_int(int *a, int *b)
 {
-	*a = 42;
-	*b = 98;
+	int swap;
+
+	swap = *a;
+	*a = *b;
+	*b = swap;
 }

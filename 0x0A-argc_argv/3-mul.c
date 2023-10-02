@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _atoi - converts a string to an integer
- * @s: string to be converted to int
- * Return: the int converted from the string
+ * _atoi - converts a string to an int
+ * @s: string to be converted to iny
+ * Return: the int converted from the str
  */
 int _atoi(char *s)
 {
@@ -10,15 +10,10 @@ int _atoi(char *s)
 	int a, b, n, len, c, digit;
 
 	a = 0;
-
 	b = 0;
-
 	n = 0;
-
 	len = 0;
-
 	c = 0;
-
 	digit = 0;
 
 	while (s[len] != '\0')
@@ -30,9 +25,6 @@ int _atoi(char *s)
 		if (s[a] == '-')
 
 			++b;
-
-
-
 		if (s[a] >= '0' && s[a] <= '9')
 		{
 			digit = s[a] - '0';
@@ -50,12 +42,9 @@ int _atoi(char *s)
 		a++;
 	}
 	if (c == 0)
-
 		return (0);
 	return (n);
-
 }
-
 /**
  * main - multiplies two numbers
  * @argc: number of arguments

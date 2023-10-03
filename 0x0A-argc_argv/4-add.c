@@ -1,4 +1,8 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 /**
 	 * check_num - check - string there are digit
 	 * @str: An array type string
@@ -38,7 +42,7 @@
 		{
 			if (check_num(argv[i]))
 			{
-				str_to_int = _atoi(argv[i]);
+				str_to_int = atoi(argv[i]);
 				sum = sum + str_to_int;
 			}
 			else

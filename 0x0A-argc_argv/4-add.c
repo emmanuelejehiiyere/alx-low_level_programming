@@ -24,34 +24,33 @@
 		return (1);
 	}
 
-	/**
-	 * main - Displays the name of the program
-	 * @argc: Count argument
-	 * @argv: Arguments
-	 * Return: Always 0 (Successful)
-	 */
+/**
+ * main - a program that adds positive numbers
+ * @argc: a parameter that count arguments
+ * @argv: a parameter
+ * Return: 0 if successful
+ */
+int main(int argc, char *argv[])
+{
+	int i;
+	int str_to_int;
+	int sum = 0;
 
-	int main(int argc, char *argv[])
+	i = 1;
+	while (i < argc)
 	{
-		int i;
-		int str_to_int;
-		int sum = 0;
-
-		i = 1;
-		while (i < argc)
+		if (check_num(argv[i]))
 		{
-			if (check_num(argv[i]))
-			{
-				str_to_int = atoi(argv[i]);
-				sum = sum + str_to_int;
-			}
-			else
-			{
-				printf("Error\n");
-				return (1);
-			}
-			i++;
+			str_to_int = atoi(argv[i]);
+			sum = sum + str_to_int;
 		}
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
+		i++;
+	}
 		printf("%d\n", sum);
 		return (0);
 	}
